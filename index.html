@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  </link>
+  <title>Binary Tree Visualization</title>
+</head>
+
+<body>
+  <nav id="nav">
+    <div class="navTop">
+      <div class="navItem">
+        <img src="./tree1.jpg" width="90" height="80" alt="">
+        <h1>Binary Tree Visualization</h1>
+      </div>
+
+      <div class="navItem">
+        <span class="welcome">Welcome to the site!!</span>
+      </div>
+    </div>
+
+  </nav>
+
+  <header>
+    <label>Please Input Your Array:</label><br />
+    <input type="text" id="array-input" name="array" />
+    <div id="options">
+      <button onclick="treeAndArray()">Binary Tree Visualization</button>
+      <button onclick="heapify()">Max-Heap Visualization</button>
+      <button onclick="createBinarySearchTree()">Binary Search Tree Visualization</button>
+    </div>
+  </header>
+
+  <div id="blurb">
+    <div id="visual-title"></div>
+    <div id="instructions"></div>
+  </div>
+  
+  <div class="tree">
+    <div id="binary-tree"></div>
+    <div id="array-visual"></div>
+  </div>
+
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+  <script src="./js/nodes.js"></script>
+  <script src="./js/heap.js"></script>
+  <script src="./js/app.js"></script>
+</body>
+
+</html>

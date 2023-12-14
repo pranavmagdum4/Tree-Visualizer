@@ -1,0 +1,157 @@
+html {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  background: white;
+  min-height: 100vh;
+  font-family: 'Lato', sans-serif;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+nav {
+  background-color: rgb(38, 34, 31);
+  color: white;
+  padding: 20px 50px;
+}
+
+.navItem {
+  display: flex;
+  align-items: center;
+}
+
+.navItem img {
+  margin-right: 10px;
+}
+
+.navTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navItem h1 {
+  margin: 0;
+}
+
+.welcome {
+  font-size: 20px;
+  border-bottom: 2px solid green;
+  cursor: pointer;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing-animation 5s steps(40, end) infinite;
+}
+
+@keyframes typing-animation {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 100%;
+  }
+}
+
+header {
+  background-size: cover;
+  width: 100%;
+  padding: 1em;
+  color: black;
+}
+
+#options {
+  display: flex;
+  justify-content: center;
+}
+
+#options button {
+  margin: 10px 10px;
+  /* margin-top: 1em; */
+  background-color: rgb(8, 74, 3);
+  font-size: 1.2em;
+  color: white;
+  padding: .25em .5em .25em .5em;
+  border: none;
+  border-radius: 5px;
+  font-weight: normal;
+  cursor: pointer;
+  width: 300px;
+}
+
+label {
+  font-size: 1.2em;
+  display: flex;
+  justify-content: center;
+
+}
+
+input {
+  font-size: 1.2em;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+}
+
+
+#blurb {
+  background-color: rgba(255, 255, 255, 0.386);
+  text-align: center;
+  margin: 1em auto 1em auto;
+  width: 500px;
+  padding: .5em;
+  border-radius: 5px;
+}
+
+#visual-title {
+  font-weight: bold;
+  font-size: 1.2em;
+  padding-bottom: .5em;
+}
+
+#array-visual {
+  margin: 1em;
+}
+
+.tree {
+  justify-content: center;
+  text-align: center;
+}
+
+rect:hover,
+circle:hover,
+text.circle:hover,
+text.rect:hover {
+  cursor: pointer;
+}
+
+.subtext {
+  font-size: .8em;
+  font-weight: 400;
+}
+
+.svg-container {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  padding-bottom: 100%;
+  vertical-align: top;
+  overflow: hidden;
+}
+
+.svg-content-responsive {
+  display: inline-block;
+  position: absolute;
+  top: 10px;
+  left: 0;
+}
